@@ -40,11 +40,11 @@ section{padding:4.5rem 0;border-top:1px solid var(--line)}
 /* hero */
 header.hero{padding:5rem 0 4rem}
 .hero .role{font:600 clamp(1.25rem,3.4vw,1.9rem)/1.2 var(--d);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:1.25rem 0 .75rem}
-.hero .tag{font-size:1.25rem;max-width:34rem;margin:0 0 1.5rem}
+.hero .tag{font-size:1.25rem;margin:0 0 1.5rem}
 .meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.75rem;padding:0;list-style:none}
 .meta li{font:600 .95rem/1 var(--d);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);padding:.5rem .75rem;border-radius:999px;color:var(--muted)}
 .meta b{color:var(--accent);font-weight:700}
-.intro{max-width:40rem;color:var(--muted);margin:0 0 2rem}
+.intro{color:var(--muted);margin:0 0 2rem}
 .btns{display:flex;flex-wrap:wrap;gap:.75rem}
 .btn{display:inline-block;text-decoration:none;font:700 1.05rem/1 var(--d);letter-spacing:.1em;text-transform:uppercase;padding:.95rem 1.5rem;border-radius:4px;border:2px solid var(--accent);transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
@@ -54,7 +54,7 @@ header.hero{padding:5rem 0 4rem}
 .btn.ghost:hover{background:var(--tint)}
 
 /* about */
-.about p{max-width:42rem;margin:0 0 1.1rem}
+.about p{margin:0 0 1.1rem}
 
 /* work */
 .cards{display:grid;gap:1.5rem}
@@ -85,6 +85,9 @@ small{color:var(--muted)}
 @media (min-width:760px){
   .two{grid-template-columns:1fr 1fr}
   .card{padding:2rem}
+}
+@media (min-width:900px){
+  .hero .tag{white-space:nowrap}
 }
 @media (max-width:600px){
   html{-webkit-text-size-adjust:100%}
